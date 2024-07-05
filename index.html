@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado Colaboradores</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2>Verificador de Estado de Colaboradores</h2>
+        <form id="numero_documentoForm">
+            <p>Digite el número del documento:</p>
+            <input type="text" id="numero_documento" name="numero_documento" required pattern="\d{8,10}" title="Ingrese un número de documento válido de 8 a 10 dígitos">
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+    
+    <footer>
+        <p>Arkos Sistemas Arquitectónicos S.A.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

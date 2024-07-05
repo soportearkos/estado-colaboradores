@@ -1,0 +1,199 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+/* Estilos para el contenedor principal*/
+body {
+    margin: 10px;
+    padding: 50px;
+    line-height: 1.6;
+    background-image: url('img/imagen_de_fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background: #dedbe6; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 492px; /* Ancho máximo del formulario */
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+form {
+    margin: 5px;
+    padding: 15px;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+/* Estilos para el título del contenedor del formulario */
+div h2 {
+    color: #283043;
+    margin: 5px;
+    font-weight:bold;
+    font-size: 28px;
+}
+
+/* Estilos para el texto del contenedor del formulario */
+form p {
+    text-align:left;
+    display: block;
+    margin-bottom: 5px;
+    font-weight:lighter;
+}
+
+/* Estilos para la entrada de texto */
+form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #585858;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Estilos para el botón*/
+form button[type="submit"] {
+    padding: 10px 20px;
+    background: #c42034;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #c42034;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición de estilo del botón */
+}
+
+/* Estilos para la acción del botón*/
+form button[type="submit"]:hover {
+    background: transparent;
+    color: #c42034; 
+}
+
+/* Estilos para el contenedor del resultado*/
+#result {
+    display: none;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(83, 51, 51, 0.1);
+}
+
+/* Estilos para el título del contendor de resultado */
+#result h2{
+    margin: 0;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+/* Estilos generales para los campos de texto */
+#result p{
+    text-align: left;
+    margin: 50;
+    padding: 1px;
+    font-size: 17px;
+}
+
+
+/* Estilos para los campos de texto fijos (nombres, estado,cargo,etc.)*/
+.campos-label{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Estilos para el texto de estado activo*/
+.estado-valor-activo{
+    font-weight: bold;
+    color: #27811f;
+    font-size: 22px;
+}
+
+/* Estilos para el texto de estado inactivo*/
+.estado-valor-inactivo{
+    font-weight: bold;
+    color: #c42034;
+    font-size: 22px;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    color: #fff;
+    font-family: "Century Gothic";
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Queries para la Responsividad */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    div h2 {
+        font-size: 24px;
+    }
+
+    form input[type="text"] {
+        padding: 8px;
+    }
+
+    form button[type="submit"] {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #result h2 {
+        font-size: 24px;
+    }
+
+    #result p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    div h2 {
+        font-size: 20px;
+    }
+
+    form input[type="text"] {
+        padding: 6px;
+    }
+
+    form button[type="submit"] {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #result h2 {
+        font-size: 20px;
+    }
+
+    #result p {
+        font-size: 13px;
+    }
+}
