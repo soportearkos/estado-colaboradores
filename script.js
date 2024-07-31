@@ -17,6 +17,7 @@ document.getElementById('numero_documentoForm').addEventListener('submit', funct
                     resultDiv.innerHTML = `
                         <h2>Datos del Colaborador</h2>
                         <p><span class="campos-label">Estado:</span> <span class="estado-valor-inactivo">${empleado.ESTADO}</span></p>
+                        <p><span class="campos-label">Nombre completo:</span> ${empleado.NOMBRES_APELLIDOS}</p>
                     `;
                 } else {
                     resultDiv.innerHTML = `
